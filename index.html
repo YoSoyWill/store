@@ -1,100 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <!-- https://github.com/MohamedBrary/firebase-sample-chat -->
-    <title>
-      Firebase Sample Chat
-    </title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
-    </script>    
-    <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay.min.js">
-    </script>    
-    <link href="firebase_chat.css" rel="stylesheet"/>
-    <link href="https://www.fusionaryhub.com/favicon.ico" rel="shortcut icon" type="image/png"/>
-    <link href="favicon.ico" rel="shortcut icon" type="image/png"/>
-  </head>
-  <body>
-    <script src="https://use.fontawesome.com/45e03a14ce.js">
-    </script>
-    <div class="main_section">
-      <div class="container">
-        <div class="chat_container">
-          <!--conversations chat_sidebar-->
-          <!--chat-->
-          <div id="chat_column" class="col-sm-6 message_section">
-            <div class="row">
-              <div class="new_message_head">
-                <div class="pull-left">
-                  <span class="hide" id='username'>
-                    Developer
-                  </span>
-                  <p id='othername'>
-                    Designer
-                  </p>
-                </div>
-                <div class="pull-right">
-                  <div class="dropdown">
-                    <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" type="button">
-                      <i aria-hidden="true" class="fa fa-cogs">
-                      </i>
-                      Setting
-                      <span class="caret">
-                      </span>
-                    </button>
-                    <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-right">
-                      <li>
-                        <a href="#">
-                          Action
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Profile
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Logout
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!--chat_area-->
-              <div class="message_write">
-                <textarea id="chat_text" class="form-control" placeholder="type a message"></textarea>
-                <div class="clearfix">
-                </div>
-                <div class="chat_bottom">
-                  <input id="file_input" class="hide" type="file"/>
-                  <a id="file_anchor" class="pull-left upload_btn" href="">
-                    <i aria-hidden="true" class="fa fa-cloud-upload">
-                    </i>
-                    Upload File
-                  </a>
-                  <a id="post_button" class="pull-right btn btn-success" href="">
-                    Send
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end of message_section-->
-          <!--end of chat-->          
-        </div>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Active Tabs</h2>
+  <p>To highlight the current tab/page the user is on, add a color class, and use JavaScript to update the active link.</p>
+
+  <div class="w3-bar w3-white">
+    <button class="w3-bar-item w3-button tablink w3-white" onclick="openCity(event,'1v')">Primera vuelta</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'2v')">Segunda vuelta</button>
+  
+  <div id="1v" class="w3-container w3-border city">
+    <div class="w3-container">
+  <table class="w3-table-all w3-card-4  w3-centered">
+    <tr class="w3-purple">
+      <th>Jornada</th>
+      <th>Contrincante</th>
+      <th>Detalle</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>San Carlos</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>2</th>
+      <th>Pérez Zeledón</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr> 
+    <tr>
+      <th>3</th>
+      <th>Santos</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>4</th>
+      <th>Guadalupe</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr> 
+    <tr>
+      <th>5</th>
+      <th>LDA</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>6</th>
+      <th>Jicaral</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    <tr>
+      <th>7</th>
+      <th>Cartaginés</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>8</th>
+      <th>Limón</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr> 
+    <tr>
+      <th>9</th>
+      <th>Heredia</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>10</th>
+      <th>UCR</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr> 
+    <tr>
+      <th>11</th>
+      <th>Grecia</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+      
+  </table>
+</div>
+
+  </div>
+  </div>
+
+  <div id="2v" class="w3-container w3-border city" style="display:none">
+    <div class="w3-container">
+  <table class="w3-table-all w3-card-4  w3-centered">
+    <tr class="w3-purple">
+      <th>Jornada</th>
+      <th>Contrincante</th>
+      <th>Detalle</th>
+    </tr>
+    <tr>
+      <th>12</th>
+      <th>San Carlos</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>13</th>
+      <th>Pérez Zeledón</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr> 
+    <tr>
+      <th>14</th>
+      <th>Santos</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>15</th>
+      <th>Guadalupe</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr> 
+    <tr>
+      <th>16</th>
+      <th>LDA</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>17</th>
+      <th>Jicaral</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    <tr>
+      <th>18</th>
+      <th>Cartaginés</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>19</th>
+      <th>Limón</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr> 
+    <tr>
+      <th>20</th>
+      <th>Heredia</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+    <tr>
+      <th>21</th>
+      <th>UCR</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr> 
+    <tr>
+      <th>22</th>
+      <th>Grecia</th>
+      <th>
+      <button class="w3-button w3-small w3-circle w3-purple">+</button>
+      </th>
+    </tr>   
+      
+  </table>
+</div>
+
+  </div>
+  </div>
+<div id="Jx" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('Jx').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <div class="w3-container">
+  <h2 class="w3-center">Marcador final</h2>
+
+  <table class="w3-table">
+    <tr>
+      <td><strong>Alineación</strong></td>
+      <td>Jugadores que saltaron de inicio al campo y las variantes</td>
+    </tr>
+    <tr>
+      <td><strong>Estadio</strong></td>
+      <td>Estadio donde se desarrolló el encuentro</td>
+    </tr>    
+    <tr>
+      <td><strong>Resumen</strong></td>
+      <td>Resumen del partido</td>
+    </tr>   
+    <tr>
+      <td><strong>MVP</strong></td>
+      <td>Mejor jugador escogido por los usuarios</td>
+    </tr>  
+    <tr>
+      <td><strong>Calificación</strong></td>
+      <td>Calificación del equipo dada por los usuarios</td>
+    </tr>   
+  </table>
+</div>
+
       </div>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js">
-    </script>
-    <script src="firebase_wrapper.js">
-    </script>
-    <script src="firebase_chat.js">
-    </script>
-  </body>
+</div>
+  <h6> El detalle estará disponible 24 horas después de finalizado el compromiso</h6>
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-white", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-white";
+}
+</script>
+
+</body>
 </html>

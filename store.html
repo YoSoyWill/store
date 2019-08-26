@@ -12,178 +12,177 @@
 
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 <style>
-html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
-.mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Lato", sans-serif
+    }
+    
+    .mySlides {
+        display: none
+    }
+    
+    .w3-tag,
+    .fa {
+        cursor: pointer
+    }
+    
+    .w3-tag {
+        height: 15px;
+        width: 15px;
+        padding: 0;
+        margin-top: 6px
+    }
 </style>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><span class="w3-padding w3-black w3-opacity-min"><b>WILL</b></span> store</h3>
-  <a href="#productos" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCTOS</a>
-  <a href="#suscripciones" onclick="w3_close()" class="w3-bar-item w3-button">SUSCRIPCIONES</a>
-  <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a> 
-  <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-button snipcart-checkout"><i class="fa fa-shopping-cart"></i>CARRITO</a>
-</nav>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
+        <br>
+        <h3 class="w3-padding-64 w3-center"><span class="w3-padding w3-black w3-opacity-min"><b>WILL</b></span> store</h3>
+        <a href="#productos" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCTOS</a>
+        <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
+        <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-button snipcart-checkout"><i class="fa fa-shopping-cart"></i>CARRITO</a>
+    </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding"><span class="w3-padding w3-black w3-opacity-min"><b>WILL</b></span> store</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-</header>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding"><span class="w3-padding w3-black w3-opacity-min"><b>WILL</b></span> store</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
 
-  <!-- Push down content on small screens --> 
-  <div class="w3-hide-large" style="margin-top:83px"></div>
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
 
-  <!-- PRODUCTOS Section -->
-  <div class="w3-row-padding" id="productos">
+        <!-- PRODUCTOS Section -->
+        <div class="w3-row-padding" id="productos">
 
-      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">PRODUCTOS</h3>
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">PRODUCTOS</h3>
 
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://imagesofrmnp.com/images/300/Still-Waters-Pano.jpg" alt="producto1" style="width:100%">
+                    <div class="w3-container">
+                        <h3>PRODUCTO 1</h3>
+                        <p class="w3-opacity">¢1000.00</p>
+                        <p>Descripción del producto 1</p>
+                        <p>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="1" data-item-name="PRODUCTO 1" data-item-price="1000.00" data-item-description="producto 1" data-item-url="https://yosoywill.github.io/chatphp/store">COMPRAR</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-<div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="https://imagesofrmnp.com/images/300/Still-Waters-Pano.jpg" alt="producto1" style="width:100%">
-        <div class="w3-container">
-          <h3>PRODUCTO 1</h3>
-          <p class="w3-opacity">¢1000.00</p>
-          <p>Descripción del producto 1</p>
-          <p><button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="1"
-    data-item-name="PRODUCTO 1" data-item-price="1000.00" data-item-description="producto 1" data-item-url="https://yosoywill.github.io/chatphp/store">COMPRAR</button></p>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://images.squarespace-cdn.com/content/v1/53015420e4b0c37a4001756a/1487518529392-LR1Y70AXBZSP4Z8O9GJJ/ke17ZwdGBToddI8pDm48kJ9I60vrFbbf4QxGSz3RN_4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcdoekfuy91T7gkrLNkQzlqJayTNwFcKVEg14ZIYkdDg1k63rrAVeGZt7FoqKEtb-V/NavyPier_Panorama1web.jpg?format=300w" alt="producto2" style="width:100%">
+                    <div class="w3-container">
+                        <h3>PRODUCTO 2</h3>
+                        <p class="w3-opacity">¢2000.00</p>
+                        <p>Descripción del producto 2</p>
+                        <p>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="2" data-item-name="PRODUCTO 2" data-item-price="200.00" data-item-description="producto 2" data-item-url="https://yosoywill.github.io/chatphp/store" data-item-file-guid="95892041-10f5-4616-ac7c-d36dc32dacd9">COMPRAR</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://www.beecreekphoto.com/images/300/Austin-Skyline-From-Above-Pano-DR208392.jpg" alt="producto3" style="width:100%">
+                    <div class="w3-container">
+                        <h3>PRODUCTO 3</h3>
+                        <p class="w3-opacity">¢3000.00</p>
+                        <p>Descripción del producto 3</p>
+                        <p>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="3" data-item-name="PRODUCTO 3" data-item-price="3000.00" data-item-description="producto 1" data-item-url="https://yosoywill.github.io/chatphp/store">COMPRAR</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://www.pictorem.com/collection/300_Art-Design-Works_Abstract%20Sunset%20V%20-%20Panoramic.jpg" alt="producto4" style="width:100%">
+                    <div class="w3-container">
+                        <h3>PRODUCTO 4</h3>
+                        <p class="w3-opacity">¢4000.00</p>
+                        <p>Descripción del producto 4</p>
+                        <p>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="4" data-item-name="PRODUCTO 3" data-item-price="4000.00" data-item-description="producto 3" data-item-url="https://yosoywill.github.io/chatphp/store">COMPRAR</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://i0.wp.com/snowmads.blog/wp-content/uploads/2013/03/abstract-300x100.jpg?fit=300%2C100&ssl=1" alt="producto5" style="width:100%">
+                    <div class="w3-container">
+                        <h3>PRODUCTO 5</h3>
+                        <p class="w3-opacity">¢5000.00</p>
+                        <p>Descripción del producto 5</p>
+                        <p>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="5" data-item-name="PRODUCTO 5" data-item-price="5000.00" data-item-description="producto 5" data-item-url="https://yosoywill.github.io/chatphp/store">COMPRAR</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afb1c3a-ad62-48da-85cd-9c5612c1b563/d80is74-7b59835d-8f3d-455a-a5dd-98be184c12ac.jpg/v1/fill/w_300,h_100,q_70,strp/abstract_drawing_by_xxxyashashivaxxx_d80is74-200h.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQyIiwicGF0aCI6IlwvZlwvNGFmYjFjM2EtYWQ2Mi00OGRhLTg1Y2QtOWM1NjEyYzFiNTYzXC9kODBpczc0LTdiNTk4MzVkLThmM2QtNDU1YS1hNWRkLTk4YmUxODRjMTJhYy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zY1tf7wQIOJY2_Rujl_B-L1aGdLStdJLgxT5BH6orAs" alt="producto6" style="width:100%">
+                    <div class="w3-container">
+                        <h3>PRODUCTO 6</h3>
+                        <p class="w3-opacity">¢5000.00</p>
+                        <p>Descripción del producto 6</p>
+                        <p>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="6" data-item-name="PRODUCTO 6" data-item-price="6000.00" data-item-description="producto 6" data-item-url="https://yosoywill.github.io/chatphp/store">COMPRAR</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32" id="sobre">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">SOBRE</h3>
+            <p>Esta es una tienda de ejemplo sobre como poder desarrollar un sitio web para comercio Online
+            </p>
+        </div>
+
+        <script type="text/javascript" id="snipcart" src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="YjE4M2MzNWYtYzllZi00ZGM2LWJmYWQtYmM0MTE3YjUwZjBiNjM2OTAzNjA1NzIxODEyMDQy" data-autopop="false">
+        </script>
+        <!-- modal -->
+        <!-- End page content -->
     </div>
 
-<div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="https://images.squarespace-cdn.com/content/v1/53015420e4b0c37a4001756a/1487518529392-LR1Y70AXBZSP4Z8O9GJJ/ke17ZwdGBToddI8pDm48kJ9I60vrFbbf4QxGSz3RN_4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcdoekfuy91T7gkrLNkQzlqJayTNwFcKVEg14ZIYkdDg1k63rrAVeGZt7FoqKEtb-V/NavyPier_Panorama1web.jpg?format=300w" alt="producto2" style="width:100%">
-        <div class="w3-container">
-          <h3>PRODUCTO 2</h3>
-          <p class="w3-opacity">¢2000.00</p>
-          <p>Descripción del producto 2</p>
-          <p><button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="2"
-    data-item-name="PRODUCTO 2" data-item-price="200.00" data-item-description="producto 2" data-item-url="https://yosoywill.github.io/chatphp/store" data-item-file-guid="95892041-10f5-4616-ac7c-d36dc32dacd9">COMPRAR</button></p>
-        </div>
-      </div>
-    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+        <p>Hecho por Will con W3.css y Snipcart</p>
+    </footer>
 
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQERUQEBAQEBASFxEXFxgVFxcQEA0SGhcaGCAXGRgkKCgsHCYlJx8YLTEtJSkrLi4uIyszODMtNygtLisBCgoKDg0OFxAQFy0lIB4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAGQBLAMBEQACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EAD4QAAIBAwMCBQIEAwcDAwUAAAECEQADIQQSMQVBEyJRYXEGMiNCgZEUobEVM1LB0eHwB2LxQ4KyJFNjcpL/xAAaAQACAwEBAAAAAAAAAAAAAAADBAABAgUG/8QANBEAAQQBAwEGBQQCAwADAAAAAQACAxEhBBIxQRNRYXGBkQWhweHwIjKx0RTxI0JSJDNy/9oADAMBAAIRAxEAPwDW3LdejDl5ktQ7JWwUMhVPbrQKyQqylWChkKp7c1oFZLSRSHewa0CEIsN2qjZre5DLAqrunqw5DdF1CFe3FbBQiCFWVq1YKiVqldqJWotAqBFRWCuEVFdqJWqV2okVFpRIqK16qUUSKisFRK1au1EiotL0VFF4CqUXQKtRSAqlkroFWqJViieKomuVQBPC4RVqL1RReqKL1RReq1FyoouEVFa5UUXatRcqlF6KtRfV7ukB5/0rhiSl3CwKoaILwP8AOtdoSsdmBwq301bD1ksCpfT1sPQy1UtYrYesFqA6qTbtMy/dwvGHY7Qc9gSDV7jWOVktAyeAsPd6jrbNxfEuowLqpG0REAnsOxoJdM02XAi6Rg2GQUGkGrW2azTe5JbAqLlitB6wWAodtMPSrDyhmEdypuaf0rYf3oTou5UPZitB1rBaQq2tmpYVUVDw6lq7UClS1YKgVqWtArm2ortc2VLUte2VFLXCtRWCoMlS1oFRCVLWrXglSwq3KQt1LVEqQSpazaltqWqtOuhdaFi1etlQwfGZgT5SMETNcbWkukND9q7uhpsYs/uSjcrkss7SWjiQJOMU/o5DJA1zua6eGFzdcwR6h7W8A9fHK4Upq0na8EqWpuXjbqWpa94dS1Ny9sqWpajsqWrtcKVdq7XNtVau17bUtS1zbUtS19mNuvOgr0pCra2K0CskBVvbrYKwQqXtVsOWS1UPZrYesFiX9X0wNpify+Yf/spkfzrQflDcygV86+ohFtbkebeTPuNoH9KhdYHr9Fcbaca7gP5W+tWyyqTyQp/UgE0Xeh9muPZqw9ZLFQ9oCSeKvf1WezBQmp1CC4lsrtLJbKkDcHJE5jg5HPNAh1IJcCayUeXSEBpAvAXWs+1Mds3/AND3S3YO/wDJ9lnus9XNm4bYtgkBTJJGCJEAChnUi6FFbGl43WD3Ur+maoX03gbTwRzB9j6UWObeCa4QpNMGEAm7CJeyKLvKF2I7kO1mr3rPZBcFir3rHZLhs1e5ZMZ6JLrurm3cNsIpAjJYqcmOI9qWfqS11UPdOR6IOZu3H2+6na6nuUN+ErMxG1nYEQJBnbEHj5rD9Y5ovYT5H5I7PhwdjtAPMInSXhcQOBG79YzHNNRSdowOqrSE8XZPLbulbFEtAtdAqWpakBUtVa9FS1LUttS1Mr2itSl/KeUk5I3Zc5jn4+a4k7gHvXoNOy2RfnRR00QSWX7n7gT5jTfw47dO0EVV/wApT4lHv1LnA4Nfwrk2H82PbNOl5qwEk2EE0XUF4KPRv2qbys9kLq1xh7VAe9U5gHCgR7GtbljYQLKiT7Ve5ZpRJqWtALkVLUtcNS1YUDNS1eFEzUtXhfa9fet2UNy4YVflifYAZJ9hXmQ4nC9UWAZKD0Ostam2Lti5uQzmMgjkEHII9DWw6uVnZYsFD9T6pa0wHi3MngRud45hRk1oEFZ2HgK1NUCoYggESJgEiAeJxyOY5qNeDwbVmNw5CCv6y55dtl5LCZEqqT3M8xnFGAHVyASRwFTq7+62+9Cm4FVEhndiDACjvxUJDRdq2sLsELC/V1kfwyAfcXeJxMwQJPeO3NYbMCaK2+EtFrUanqaWdML8OyBU7bWAiCYMenBo5dQspcDol9r6msXlbwG3XAu6HVlAyMExHfsavtB0WHNICyXVuoai2wuC8+5iR9xKgeY7QD2xSb3m7BIvHKdiYKJLQaF8Jx9JdUuaq8ruVR7abARKhkCCCY74+KogAUc2bWtxcbGKFJvrQUZwDaXaFP2m4zlpiMETjjFWXgEABYANGzlY3qt7xL4BFpywt5SELEiNoIwM44rQwCbpDJstBFpl0mz4coz7H3KDb3K2Npz9ucDswqaXUEybAbBzwt6rTgR7nCiMcpsRgnMD9QPmupuXMDDVgKuBV2slq7FTcq2Lm0Ve5TZayWvB/iGw0ecfaCsE3MSf+enFJuoyfninGW2M/nNKqxpF8PcRugtgEyBCyTggQDPPBrIfkNr3/wBom3G4n2/0m3QUBsJ8N/8AI09pzUbQuVq23M5H+FRd6WERKhA71d9yxsPXCcdO6ZZdBcuavT2ATthzNw+4Udvekp9WY3bQ0n+F09PoWyMDi8C8UhOppYtMPD1Fu8jBYdZgk9qkOtZJgmiehKvUaAx5bkAc0o3dPcFtXQQGbzMdoW2oOZBMtM8DNYn1O1+0cj5omn0ls3Vykl66tltq2beQGltwIPmO0EERzx8VyhKSd35+ZXoTEGjb0VnRtWGuFO20mDmDukmT8mn9HI8u2k4yuXr4WBm4NzhNrt5FBkqP1AP9afc8NBJ6LmMiLyAByl/9uIY227zTH5NvPHNKu10YxRTrfhshyXNHqirOsRsE7W2hip+5VPc0Zmoa5u44Azz0S79M5r9ozmuOT4KltW8BjaIQmCTICD1mM/GK58XxhrpA0tod9/ZdCX4KWxlwdZ7q+XKIJFdgHC4RYAeMqlyK2CglgCqL1q1ghXafTXLhhFLZjAxMTE8UCbURRC5HAJiHSSzGo2k/x7qV3TMqHcjBww7HC7T3+auOZshtrrC3JpnxtIc0ggoKaMlqX0T6t1Nx7NvY6F/FSD9q5BHqf3rzH6RkjC9c4PIIacpF/wBNLzrpnl9v4pkQCG8ijk/EY9K2zaRgLBDsWaUPqu8Tq0YFYFozIBMeYQDHJn+tDloGkaEErL/VGpdntncdu2CqsHVoMyy8HgczxUJIwhgdUR9O9cuWTcuEs4ZHMGRtCOSAFPGMfpWw8tGBZpaEYef1GhfRab+0r16zbvpBLbWVdoJDZAmTHJFbnf8A8O6qOL7ucrMTKloGxmsZ4whfqe9buaSy7FRcVrTGNu1HCIDPpw2RPHvS+nLg+jx9LRtQAWX1+yLfRtrA1hmJFyTKkKfaCQf6U7qpAyMuHRIwxlz6Kz2s6Bb0a6gB7xCPslggDGIBEEEiTkwPaaWhnLxZAyiTacNeADwk+vsBrK4YbSsmJUSp+4jtWXvIoozGjI70w6GTo76G0r3gUyIbDbcxAyAPac1C/cAeoQ2ABzgOL5TY3r1+5u2AABQI3uQZYA7SYJzwwMGPigy6gtFhufzqEdkLXGi7H53rM9X1BJe2xgW3gApbR4H+IgDOTTEQ4cBz4k/ygSgEFhPHcP6RvT722Att3Mp+Mo/BUbBAMCJJJFTSm9SCcY4tXqgBpyGm89yY3NY+0BnfbIxKohP6DJrtEsBs0FyAZCKFmui8l5yCVUECBzJBM4/kaoPjPDrVFko5bX3XbN5mYAwoJ5zA9ziqkeGxucM0LVwsc6RrCKsgIe/ca2rH+J3fb/6YkSRA4A4Pf2rjj4jJxhdo/DYul+6T6tytxwdzQSGhyu8zdzsGI54/zpqN/aFrz/2APH1/Pkk5WmNr2f8Akkc/RCLaAAIKtO7CtuZD5YnHFEa81Rx5oT4vXyPmmvR9Qi6dSzBdoJM/lUsYPx70eOeNrQC4Wl5tLI9xc1ljv+S1/wBMda0wsshdGJYmFl2YYUhlBmINcvXuLpA5rsADrS6ugi2wlrm5JNpFqGti6QrE2pMGIYr2kevauvHMXQ9pWa+a4cunDdR2R4v5HhLH11vcHBdLgbyZAQhSQDxJPrwO2a588z3kChRwV1IdO1rcHIz80Dq9STsfe0s9kxhQ44JaI2x6ZGaVgA7Zljg/VNTg9k+uo+i1V7Vp4YQtKQRMCUYqfNzjjFa1E1vLhzamnhAjDT3BZ7qtwlxjEW85J98TH6xQGEXafeDfsgrZAZ+VLIVPIhWgGDEz/rVmd0YJHXCrsGyEB3Az7Luk6faZ0RrTOCwEBmUkTJHGTFLyTSBpfurHdaOyFhIbtR+pfwzsAZR54DtuaFY5M8AzgegphsvaNa4us1lLPh2uIAodPRB6e7cZ2AAcsAJUGdgMbSO4xUfNtaRdWK59fmhxQBzg4i6JKb75teGFtMM8pMPMFo9eTSFAEkkj1XSqxQQ+i1bFYbDrH6jsf+eleq0Ewkjomy3HOfNeQ+J6cwyWBh2eMDwU2ve9PWAuWASjrPTWe14gYrPELu7x3IHP6VytZ8TEJc1oy3k93X+F2dF8JErBI84PQK630O9ZUt/Eh1A3yxVCoO4YYdzHEdua5TtWZyNxz+FdpmkZADtFcfLCSHXXkOLl3cJ/M2IJgfzNdGEgAluLXPmLgaJKkbldq153aqOl9e1V5jbuO7Iq7lDCIYMoBiBkAmvPyEEUBS9K0EXm0Jc6rqdOoFi46I25mHPnkgmYjtWYXloIIBWpW3RshMOj6u7fO/UXDIYrufaCihZECc5J+ZqpH7jXVaibQQ2rv3HKeJ4jea5DEkoTkQBwMCgygB3T6qRElvVX6VZtv9391e+SZM47f71byQAiRAElF6Szqd2nRX32XdQ4Ba2BbbygHJ7k/aO00v8A5BLXNJ6efj3fyidmA8EBMuoW3Ft1Nu7tRkg8+HtTn39vn1qRPuhu/LVvFHj8pD/Q2q1TasBtUSEDYZVIZtw8o7RETmROKLqNQXRkLEcO14KK/wCoqXjMBt1wuMIB41zfiIBLGBiMwKzonEgjx+izqQNwISy2GOmuKdnFqQzBGIAzAOSZj3qTmjlajCFuJdBtuDdkbCD4RIQA8ASNwIPMish5rAv1WGsALrxm08sagMo8a4ruGDKQBZCjdIBndkHj0EiKCXyWQGkDzv6BFAaOSCsN1d3a9edt07j+cYbHsNwz2An2p+J7g1oBQJGMJcSE66NqLBS0ST4++3sRd0gbQCwkGcDiZFBJc2TJxWSjBoLcDPcva7qqufBG3YCrTtI2sDBU4BIgzzya1NI4Da0+P5yqjY0myE36ZplN+4AglB6EFGLAADMfsB/lRmkhzv1d2MYz5ILwNjSBz19ElPjMnmLbgVALGQ2BiZj09RjIoJlFWHYvp5d3z70ZrM0W5r6/gVeqv3Etm0QGNx2BIhwArrEH0zyPTiqeQ4NcB0KKwbSQSguouWuXCo82/nIaIII+Af60SEna39RqkGag536QTfXKFsbz5txCyPUd1Hr3mP0opeRizf5/SG0g8MbXl+d6aaPWGyA6rC3N20AQAFJ8jZ4Bx8H9aTlY5xF9OqPG4AY6o6z1hbrKq7FLI7ytvzAg5SJJPYwPT9KG22kknjGUTaTQAvyVr9WsgFPDDsPz+ZGKnbBCzjg9u9MdtMAAHY6ighHSxF25zf1d+UJoNTaVQt1bozh1BYEnO0cR3zPrUkkLiA0i+61gRloog13ofXa2xcdUFu/sDAJvZiqqcAspJ5PPbNCEcgcCCB6e60SCMj5rUnUutlUtugNsZAghWg4JmGmf5CqkABAI5W2AuBISLqFqXBA/La+RPHfittdWCjvFm/JCldrnJOB6if1mfWhS5aB4okYp3oimIx+GSTiCT5SAcn9j3pZ5IaQHceCMALFhKuo3HdwRZaPMsqGYFvL6kxkcUeAhraLvevsl5bJsBX9LBTzFW3CZgQQSefXipKQ6xfKjBQBpH3bhaSDd/wC7yYH6k8VhgoAGvdFJvIUDauNJteJcukHBUkNHwJwPb9qc0kskclNwD+ZSWshjlj/XmuO8eS9b6br7kkWSAiln8hhFBAMk/PAE+1dY6l4Flw9lxhpGbqDT7rYdH0xOkW3duBTsuYH4YUl+zHJn4rhasl73u2kk+HOO5d3TARsa26rx8e9HEoLb7d+Uj7EJMSMmJP7UuKIBIqvH7oxJF0Vhb5thrhcwJOcrsyQZwP2j9q6jJ9gaAFz3QbySSqdPpblxd639OQZ/IWjPE083XSEft+X3XPd8PjBq/mtEpF62T4F1AQhKqYIkyJt7iRMSB+sVwWNmDgS9o812HGMNoNclI0DovhrvUXGIEhgzEo4OD3kg+mK6ALQCN1/nslbcaNUVd02zZW49y9ZvXV2Kx2+VkOxYaSCIIz61UoaRjnx+xUYXdePBe6zsCXdmk1NsAgq7edAI8+4FAVIBxB4NBYDu3OA97+pWiARtFj88kPY0Taa0yXna2zxsG1StxXVWIa4G8gAIOQe8+gE/VB76Auu4+fhaNFAWi7r886Veu110Rbt27BVZIYHeQRMGRn9firiAIstI91HjNgpbdW4Ln95ZSSI3uFRSQBJJ+e9MktbkhBILhXUKv+020zZukOCP7sSbixmHGDJHrWSWO/68+CgLgKDr9bRms1t+4qOrXFuW9xXztueRyCSQDzRmRbASBXkhPfvICtcs+3B3EKeZJaMmfk0KYHaeqNG6ja0Op0Wpui21jR373h2rSMV3KBcC4AHBjMke1IMDgCAeqO4g5rKV6jpOvtBnuh7FvH96LvmYkTx3AzzmDHFW+V7S0BpPshiyClnVen3A7QmnbJE+PbO8T90FpBMiix6tlZLuv/V30Gfqsu07ybAAH/6H9qi4nh6m0Y2qEwJ3gMEwu4Eg5I49aqSXdEXX07q+XKZZFT2tAXeo6K5Z2uwAL7tzBpZ2JEAiZnBn3rGjeJ3u/Vdc9yvVRvhjBc2ugpP+jdf0tm5dusDdN0qYBKbCGz2iIj+ftXT2EyEkgDHyXL3/APG0bSSgb+o8W2NqNPiBt2xynmTaFgLkkQff3oQEEY2ds3NnnPj7fJE7WZxsxO6DgKvTdRtIhR2dW8x8isAxY7gpEg59wRFVLDuA2uBHmjx6gC9zCCq9Tobzsx06Oz7d7Ix2MqBYJiJ9v86GJhAB2gFdCCtmHtidjqPcQsyOoMs/h7ZgZLMBmR2jmmy9jqtvzKXGne3IcfYJoetF7Nm2Coa34qwq4VXacmPNJPvFZD2tJJNX42rMTyAAL9KVnTtTZtbXnz+ZPMxUosQYgd55P70B4AN7bHPH98orLIouo8YTV7Cm0LqKTv3n7xhlAmYHoSBB7UX/ACKItrc+GUL/ABt1gOdY8cKem02+0xJVDIYIzjYpGd32kHAOSRSsmtjikAMdmuQ0E88ZIK2NJM4Xu9L+1KodI8TdeARWswdu8cIAxaAII9ATJg1b/iemG0Oa63dw78eiyNJqLJaRjvyr9XevXrcv4CmRyypdmR2MAgwOR3pZ+s05kAAeBx3j+CmWRahrKJb7V9ULfub/AMSFUwo+9RIWfUT/AM96N/kMDttO9vJaLXkXj3ThPp6XJ8a3Zx5g+5xbgcFogzk8ew4rRYHsFknyx9VQe4OwPmiNBpLaX1JKPYaYuBAYlTBVCQec8RntSmohPZgFxz8/NNMlBJoZCX667bF654apeDXCV37EJEA+VZJPf/Q1lv6I2g4AHj+BYeS4459PwpXd61yLdhpW5cbdCFQI+0NwOCe3NWA3kuwRxlCEoAwD7KK65PDV9zBSSPzGGHIIB8o7n/Otk24jqigtoEnBW8v9VsXum27a3Qty34CkN+FcJUCSAYJBkZ4iuiyUGMFufzPskiQ5xAWa0/UEsHe5hGS4u4EOfMsEwCTH+lEE0d/utBfG6rpR0HVNL5v/AKpQH2j8T8M/cGkAzIxE8Sa0JGA2sEOrhd0nX7TqUa54TPuWDhZO4gkgwJwJnvSbtt3Vpprjxau+nfqDS6W5fbUeEJKjyFrhJDMYKng/GPeoC/joOOFQewE5yfP+kiPXbUki6BJYxBEAsYxHpFHdIAfsggAhR0X1PqmcImqewZQF1gpCKY3SJAABHxPNKviaRZbZRmSODg0ux08k/udbs3gj39V/Fvb8TPgmUBkne3lgZOc0FhkgJoVfA7/ujlolHNgfJLbvWtMsqL92/uURsVnFtg5J3yVyAzCRiCe+aI6SZwILAPXw6eyyGsaQQ4n86pj1K414EW7ilg1wMhlLwWNpJtFp47UiwgAE/LP0pMOomgM+X4UxS5pmYi/fUobToSyhG2lANpHZpHP7HmlWDUkE7CCOP03178K39mKGa80tPXenohDJ425UU7LLpCgZMkiSOJEHM9opgN1YNh1HoCR/XyQCYqotseSW3+qFrwaxpbZskp/eAB2Bwd7BvUwD7cV0WGaSMNc6iOdtfUJUiLeSG2PG0T1fp763L2Es5O3Y4C27YzAUDI9c/tTEWmY05cL65F+qw7fX6Wn2JC5pLF5NqW2tGWCzBZQYxuJBHxH61qRzASC7peD0VNY6gQM+IwmV3fYa3c1AT7WhbKTcvWzADkE4AnExOcUnHqI3OJaTjvOE0IZNtGvZPB9Z6dB4C/xVlUZmyBbbaf8AsBx+/wC1ZfKALP8Aa02FxwEN1T66072m0xGquJtujeyEr5kYAlAZBBjO7HpQ2zWQQMdMhZLDWV851FtHJPhsk8yrwG9QAJH+5rqxlxbZz6pWRoD+706ptZ1N1AijRrftutvY0KbgCwCFBEkgjgnOJmuRrCwueC+q59u9dPT7qaQ28Iy91x9TqXZwFW0bQRboH3hiMEAFSTieAPkUlptMyCOgcOBJI7ul9/l1TM85lJG2g2qB7+pULmsRGKhNMrmR5Za6WbBdo7yFBGDE0z2bXCy8kCueKA4Hpm+OiXbYNBo/Putl01PwwpvJG+zKm2v3BB8Hy4HvGa5LWl4Li01n870+Whpo8+v+ll+q3PA1BXZpZcK6bk3EwqgMyjsZYZjtXQhIfCC4uBFg+/A+XzS0zdryBVHj891Tc1T72ZbFjUPDbhb3i5bQkKXhSCYIYAGRgVp3ZsbW4gZ/dxx8unzVMDybAB8ufzlR+ovp7T2EW4LF+4pChpYJDEnKqcgxAI4mfWhab4i6Z4Y1wFevz7kxNpQxpO2/LokfQ2t23DqLjMm8eRBvZGIMyZBIE89uIro6oNkYWnINd+CPVc2EyNO4A4v1+SK+qE0KsEtveZ4bfCqIYidvAHtAEgjk1uJzzG0FtbeLPT3P8oLw8SOI5PIr5cJZpeq7US3cRrioSQA7W7lsNkoABEmDyKy+K3bmur2I+yMHu2BhbfjkHy8Vt7uutoUbT2Ntob3fxClwbAAQUOCCADg/70jKx7gXOOaoVZznnwTIZWAMe3sladfvXXbwkssIZZuiWtWziBBIjAxnk1pmmttEWRnGbPqLtUcnBAHj9sILW9Fe67X7l1E8QkEMwUKykLIQngjgiq7R0YDBGcdwPXxr3UEAcS5zwPVVX+pILN3Tq6BQqlYAa47rggMBwffPE0YQyl7ZDz1/13pZ0sbdzd2Oi79PdeS3Ze3dBcXZOVZyj9oJOPWf96O4yb6BwO+lUc0LcE5XLP1CiA21t+KZJBbCKQCANnM9yQR8GsSQEyB++gB3feltutaGkbfFKtX1Tdf8YAIZJjaAkkf4R2+aYEQqnGx38FLGazva2j52qrvUbxYN4oG1gRiFDD0SI/SsiFjRgXhYMrzk35dF5OoNFwOxe25WRCiHzB3DPrIqFgoUMrRkeBQ4Ku0epiEsm0i8sbwV904IkglR7D1qrF2QtROJxwnV7VWFBXwrD8/a7qoB/wAIAMc4EDtWXQCy4Oq+fz7p0Sf9S0Eev9oXUPo1tC7svopO2A6ht2SZBEx71trZDkOsDw+6w/sbotPv/YVOit6K6jlH1SBYdwSjL5eGIAyJxjOa0RJfI9j/AGsbYCOCPUf0qV0ejuv+HqLqGf8A1LJj4BBqAyAC2g+R/sLPZQOJIc4eg+hXH6PZQ7f422pHINp5B962176/b8wsmCO//sPt90pbfb+8MJYGf8Uc8fp+lHdEWVjCRbtf+0jAULas87WGYLdgxPb1mra0uWnEM5CLu6O7tgEEECBuA2kds8g1owGwWkILZ2A5BFeCpLNaOfLclfU7RkwT3+RQNhBLapG3F5DgbHsrf7QuBRF24NzNOTC+0TWRGDg8KBzrIBOB3rn9pam5Ltc3RyxMEETEcfH71hkUbCABSPJqHGwXGzX5fREp1K9LO7/jFVktDzERiImYqPhY+quwsDUvDiWm93X8/lWWOtXxdLuN0RuDiVb/ANo7jOe2ZrAjZtAB/PVGGseHBziDfRD6Lqji6dQTua2ywDIXk4wRAgRitSRWNt14/wC0Pti17SRd5+yK6n9Tm/O6zZUDaJ87OI7yTzA+PShM0m3JcT7fQJh+pJFBoAPnf8oZPqK8B5XK7XZ8cHcBMj9AP0HerOhjJNi8V7IPayAikU/VbhtOlxJfykkXGJRIwGUEzmOf86GdHUjXNOB0oco51X6C1zbJ63SBv64vbRVny/mJ+4kiCRJgiOYk0ZsVOJPVCfJbW44VHiMxIZ923dGScse2Jmc96KGgWQKtAdIabYtOuifUV7QqxUo7EgZYNcsgR5VGe4Bz6fNBm0rJSC5vCYj1D2gilDqXWbuquF7rH7WhT9ttRLcgjvJ9Say3TwRN/TjPQWbPmoda5xJIv1r6Ku31G2QWuC4OJcOGLsFK8ESMH15Aq2wAGg4gdBXj5rR1gJALcnx8K7kyf6rayUZFOyLQHnKFNmCMAxJ5/lFKv+Ftfduu76Dr69Eyz4if/OMfL++qg31FdDI5V7iptcA3iSUUHtEwZJI/XFGd8OiO4A830CpnxB4o7eK6phq/ra4zAnTWBCqRO9wARInOQf8Aags+HMhFMcb8m/0UST4q82C0H1P0pKLv1dqXuhrb+EF2+VPtImTIJP8AwUdulYWESC77/tSVdrpidzTVcAcfPlRu9QW6SbttUuHKlJBdoxIOMyMzV7GMFNGB4/7UdO6Wy80ecCs+icfStq1qgV8RVuJ9u5yrOeYAOOPcd+KWfBMHbmNBHccXjvT8GojLdr3EHoRkj0TfqX09cCN47ankgF5JXAGIOQRwQf3oD9VIxwa5gFpwaWOVji2QkrLP9P3FMWE8RIMkEyw5HlMEH4n2plusaMveB+fnK5snw+TlrSQs5qA9o7XUK2ZDSDIxnvXRBEgsHBXMdEQaIIVXiMV3Rwc+okGP6GrAANKdngkL1m4QTsBjPrCmOcVHMB5VVYzlEaPT377hLSM9wkkbQcnvzQpXxRMt5oIjIi801tlT1PTdQl1rTrF1PvyDsnsSJHftW4SyZgLMg8KpR2VtcMjpypWej3nxuEie8zWzQJBVgEgEDlG6X6ac2md32kzjBBIOJ9aovGAFrYUbqPpY2La3TdKvj7cEAgEAfzzRzDbbGbQRIWmimfTuhLf0movuzk2EtN9zcuWEQCP+3+eKX7J51DWEYId8qr6oh1AERcObCr6Z9O+KLNsbvM278sAF9mMGTg5NYmcIi/P7KHrVosR7RjDX7rPzpOb/ANGXla4Ea15WtthFDMWMAE+nyP0rnN1oa0YOQU4dOSavCR9IvXF327dlHLbgAp2AbVYk5+Sea9HDpJHwl7Wggdeq5D9QxshBKF0+ogfjabe/qWEkfvW2QvaKczPolJZWvdbX4TjWJZvS5EbgCu2FVjmSY5kHv6V03Ma4WFxWySMx1H58kP0PTC24nafCYEYA8QA8x8RQGQF0bmHHRMyarbI2QAnqR3eCY3dJpmvXGKKVuKQJWDbb9PgcUF2keIwAASO5FZrIy82SAe/osv8AU+mG7bbtKqNs2sC5bcFzEmIPpFc86eQGy4+S6EepiNhoGEj1WhuJtG6ZkjiJ7itOhLSK6rcc7HbjVUiLvRr67F2hlMHiIJ7etEfo3tII69UJmsiduN581Ves3VQu9rykld2QNw7A8dqVMZBu0Zu01R+SFuXnGTy3ofTFUY+CQiBrXHyXvFKqV2lZj0mfWtbSOQq2hzgbtdUbuzlYAgCdx5z/AK1gBWQRxV/wrrnS3QI9yy6pcgifLKzGBzU3sIIByiDcKs4TnqnSLwtXdULOzTM2wOrC5uYbSEkEzA74yKyHg0LytEd4wluoQCDtU2yU2mVIRZgiAJEiZB+aLRq6wsbmkkKQ3JDssWy8B/Kyrg4WB6EGPasWLrqtEA0aUdD07zpLq4DKYUby4J55yP0qpDt8vb+UIucSQG/MIm2J37XcvJ4VV2288SOOJ+RWA4dQPdUNx/6/NSt6K4UNxLZCG4QYgKxIEKCRkHOB6/FV20Ydt3C+avojNBIvaVXYsbkCIE8Vg+yWHlJcnaJ7kAgE+nvW3loFl1Acqg0uIq1Zqun6myEBtBDctgBmaFyrTA4mAw/Q0Nkkch/Q6yO5E7E2LFKvUBpYbkK+CsQJMhVg/PbFNGMgX0QqHBCpulizMNvg7IXbH3BBHvM8z71hsZrAwrBY0USritxtrsfL4Y2N5QvibQCfnBie9QwOA3bcFQSx7tt5Rtrot27aRkO66C24K6rcAkKMdzJHBpYzdne4UB1rHumhCH5bk/NO9B9U6/SNtuMtyxN0hLhD2yuxdgEyQCeSR3rVRSCsfngqDpIzdlaHQ/VOi1Lol0fw9/cQVVla3dG3sOwJ4E/pFJv+HxE7tvt/R+idi+IyNFB3v/YTTUdCW6EazdXUL3BVLpZJBgqcx8UF0c0dCEWPDn6JhssMoJlwfl9VltX9LaZg9tLbpc+5gm4FQCc7TxzxIpdmr1bH29tgYyP6/pEk0Gle2o3UTnvCUN9PG3As3VG6cXJtsB85BP611v8AIDmAlc46ItcduUZ07Rai2U3WriqqP5liD/7xIpOfbIHUQSTxz8kVjHsLQWkUgNdZjdcZoLFiPzFzOfNXc0mkMcLS40Oi5GrmBkIHIyl+i1G1pmP6VqSMAElDhlLiAi36hjkxn2+KBsrKa3Kb9Sa8DP2T5fcARJrq6Rn6LcuPrX2+m8K2z1N7dq5YUxbu7N687tpkUYxRl4fWQKvwSwc8N23g5T36b6ki3LCswt7du8yAwthmYn+leb+I6c7nuBvcbr2C9HpJm9kxp5A+pRWv+qrVo3SHdnuMhXtsCrBPpzwPcmkRpX/pBwBymjqWNsjqsHY6q6OHtyoViQMHkZBB5kCD7fNdsTyNYWhxAK4pA3hxANZXl1rESQs/NMDXPPQJQ6ZveoaXqV4qIbaAFA3ABTHMA8ntzVM1TmgAO4rotTaWOzYuyeOfWkw0fU1uNtYBXgnBlcc57YzTsGrbIaIo9/RJS6VzG2DY8spkmuFzzAzB28wGI9PWixyMc0ljqF0gPY4OG8Xi/RLepXrF8i2WlgBEHmDgT3NKkxSO27rKbj7aMbw2hx6IrT+DgNbyIySWAPrTkTIxQI49Us8yZo8+hRbXBGP9RTLqIpKtBBtCda6iHsKotqoEbplgz87lH5f/ADXJdDVuJvK7TZy4hgxjvVaaW0VXA4B7YnNPtijIFhc50sgcRaWdfsCFKqXg59h60prY8AgWndC82QTSN0+vt2rZYoSw2wBAVpyZbkce9c2dmBSc07sm+QnfTfqixfu2Be0odLe5Y3Mwkru4Ak5xHvSTtGWMc7dj2+abbNueG7crUa76qS5Y/hbKaXT2yxXbtdiULMpKwI3RJ/cGKXIFWSaGUwA6628r53q+vFFfTrb07iSN7WvxEIPAJJnAGaZi0Ac5sxc4eAdg47kOTUloLA0Ed9ZRWh6ip0V1G8BmuXbbwSFuK0Al0tgfIOYA7UxDEf8ALbRwB5/NLSv/AOF2OT9ULptQ1txctubdxYhlgNgzHx7V19TpYtSzZI2wubFM+F1sKvTqV4TN640q65ghVaJgRjgR6Ukfgmjx+ngg+35nvTQ+JagdQo/xj7Bb3tsDBws+VXC7QwHrGKcGi0wfvEbbqrrpzXulf8iaq3GuUGdOhfxDO4EQZ+0juJrT9HC+7byrbqZmgAO4VusveKS7sgaDkIxIIL4LcS3rXOjjZDKGRtoC+7/aeLnPiLnGya70Hd6j4ltQE2bLbrKTNwhgQWntH+VFaNovdyTz9FbnbjkZAA/2rOnKotLAGef+75p+EARihyudqCTIbPCtuorLtKjbjHxxW3Ma5u0jCG1zmncDlMem69dPZdbe1bjFIwfKgDTke5B/SubqtC2aRhP7Wg48TS6ul1xhifX7nEe3mtZ0nQ6PW2wl0o11zl7bQ1pQg7H2Xv6mvM6xsunkJa0hg7xgkk8H1Xaie2VgtwJPd0WN6z9JPY1AfTu19EYNuQbHt/mII4MCJIxmm4dWA0b6B6Anny8zwOUu+EmyMjvWfta3U2IFq5dEKOCQPuLTHHeJpskA0RSDYGQVruhf9SNYStrWWk1Fs+Xc4ICL3JPtHYislgPX6og1Gzn+inN36j6S48Xw9RbuBT+Ej7ldiQPuIx6gycTil5dK1zTj2TDPiRbndx0P5/SSr9XbWIRCozw8t/QVzD8NF7rITjPjocCC2/zyRFvqf8Uhe4LLi1Ei4ANoYxKsCDBJH6mulFPJG0M3E+CEWQai3FoBHVC9S6KgObF6zxkRdQqPQGD/ADNODXscC01fslHfDKIe2wPcIfUdOtshW1etkjgP+DcYbsAzAmPQ1UVk244UkjIadvKAu6O/bGbTwPQFl+JEiuo7UsYwuB4XE/xZC+i05Qp1sKUZdrKSSchlEcNOQZxFLt1xew9D0I4Wzo9rwRkdyoS8wcOrEHs2CfQDPqOx+K55kJJs2mwygKwuak3AoZwFBYxjZJj7l9jxjEir7UONAdFCbFINLzHIX1Pcj5+a2DYIQnNHU5UvGb/CxqW1VTe9dvaYr9zBCBgHzMJPeMA/60W/BFaQbx5qpbW0SzMAMRGTj1ParIoLLiCaAFrt3UTG1QB+ogn19alUKWRHQycqtS5IYTIPofKJwc49K2GnBC0Q0Ag8LTXuoqoB2kmcjgqP8p9DXTl1jWAYsrjt0xJIulZqNYEXdEjHHJrUupDWgjNoccBkdQwqLXU0dtgGNoOY59IoTdQHu2gYq0V2lexu4nN0rt/p/wCKOJAOqFQ6qu7ckFTwf0mqe6wR0W2toghDrpUeFLFQI7j47iufKwVQTcMhD/NaP6e6HbtXBcY70z5DBmQBO7Hp6UjLKdm1dBjRu3I7V9NtllIYWwoUHZuRmA3eYQYByvrMGeaXc+wQW37I4scGlheu3Lgv3XuKGNwnzEAgyB5lIAAPwB8U5CRsAGKQXiyVoelo/wDZl5jp0CB7EXIBZSdsgOZPHInvQ4Xf/KaQehQ5h/xuFJJ4ldvcuZtXhdqw4qFql4lWCVW1SD1q1RCAu323EFmCw5A3QsgtyPkn5n3rnOIEpIGV02MJiAvCrs9QHheGVmd2RhjJBifeP5CgOaSQ4O70YcEUi9Bfi2uP+TXSgP8AxtK5k7Lkcrf4n/npWzJlD7Mr3iA96uwVNpCt0+ta15lc25kT6z2peUROAEgsIsZe136OfBdt69pYrdJdlYHzGXBGQfXgVl7InMptWMj0Vl8rbJsA4KCXVam9FtAXiFAXO2TOY4yTk1z+wdMTiz3/AJ5I7mxta3e6h0/11RHWNBd091kYSFAXuVeVGfTHHPNEl0r4+RjvVRyMcKByk15+wGRHqTIPI/nQQDSZa1E2U824nb7fmdSMn2oLgKqlho24TfonXX0z+Mg3BQV2uu5WU9p5PalpdOHYBo/nRPw6kx85wn9r69ZnA1Fm34WAfDlCuPyySAfY4+KwdBCc7c+Br7JmH4nKMXjyWlHTrOttL4Gp07gxFu6otXUnJUOJE+1bhYBYa4gDvCM+fdktBvuKVar6Xv6TcWsaq33W5ZbfbWB3AnE/FOgmjeUu4sJAGO9JfBLMS/8AD3mO4HcoW6QeZI2mf1mhPcAKLfZbbE1x5C6nQdK3a9ZOD5HW6scmA0ETPqaTm1e2rbhHHw1sgO11FE67oKPbULcEruCr5rRRSZA80g9zk8mhwayKzZJ8/slz8EkjFk2ee5A6v6SuJbDqS5JH/wCRFHuVGPma6THxOND7JOT4eWDhUXejhYDXLQaASBba4FPpunNNiNnh7fdA/wAdw6D89FjtQ5LR2n/gqj1R6FIjRL4qkOSQsR7VXRKTf8bv0ok6FNs5x71ASUBsziSmGpti3sAAIgk7vNvOOf8AaKeIrbXigxPdK2QuPHFYpLXO6SfynHb1/wBBSBN8ppgx6KgypwT3/rWuAVogHlEMdpO3ywO3fIoTJXA8oLRuGVDRahjuk8yff4rMjR+5FexoDcLn8a5cITgz80fTyOsC1gwsDS6kTYuHdTpQHNFLR9BvszMp4X0xS8rBYTOlJKL6rqnC4P8ArXNnwEy8lZ5tS1yFeCGiR2NHH7Q5CDiSUdc1L2rP8MhIs3YZl5G4EGR6UbTMaXBx5QNQ9wFLP7zXQCxQXC5qwpQXd5qAqqCsRjxVlxAKyQFfrNBbW/ESM85nB5rgS6iR7XOuvLzTUbjQQqDaNgJCgscczEc10oIWSRiRwzSt0zwdoPVDDUMCFEAADt7VbZnAhoVOYCLKYaXJBOfu54wKzrpnxsO0/lpV+PkgzrXJyec+wJPakw5wFglH7FgHCov6hjyZgmite54G5HjiaOiu0VrcJkgkMcYg0MyuaTSxK6kVbuNZ2taYoTzGJpmOZ7AHNOUIsEzTvyjuq6660o1x2Uw0EyNwHpTEs732HFYi08cYtoSO3qXDYYiPTFJb3Dqm7ITKx+Jbdm5XIjEmO9ZctN/b6odTAI7R3z6Uu8CwrH7irLFoO4U8MUmO0+lUSWt3DuRY2Bz8963XTrKaSWRFuG2Dt8QbgkzMRHoK4E2olnoFxF/+cL0sekibG7Huo6b6w1doi7bKoWJkLuFs5/wzXVhDg4R7iRjOL9wAkZImGHtKznx/m1s+i6lepXTb1mn092APNs2XP/6BFPOJbQC57Miylf1v9MWNGrXLDXVKlQAWDKBHuJ/nWpGNcMokErgeVkbGrcrzXOdpYt3C6sepkrlVvfYGQxU8yPKZokQAtYkcSr16lf8A/vOfmGP7maYQaC//2Q==" alt="producto3" style="width:100%">
-        <div class="w3-container">
-          <h3>PRODUCTO 3</h3>
-          <p class="w3-opacity">¢3000.00</p>
-          <p>Descripción del producto 3</p>
-          <p><button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="3"
-    data-item-name="PRODUCTO 3" data-item-price="3000.00" data-item-description="producto 1" data-item-url="https://yosoywill.github.io/chatphp/store">COMPRAR</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- suscripcion Section -->
-  <div class="w3-row-padding" id="suscripciones">
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
-      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">SUSCRIPCIONES</h3>
-
-
-<div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="https://www.pictorem.com/collection/300_Art-Design-Works_Abstract%20Sunset%20V%20-%20Panoramic.jpg" alt="SUB1" style="width:100%">
-        <div class="w3-container">
-          <h3>SUSCRIPCION 1</h3>
-          <p class="w3-opacity">¢1500.00</p>
-          <p>Descripción de la suscripción 1</p>
-          <p><button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-name="suscripcion1" data-item-id="sub1" data-item-url="/" data-item-price="1500.00" data-item-payment-interval="Month" data-item-payment-interval-count="1" data-item-payment-trial="1">COMPRAR</button></p>
-        </div>
-      </div>
-    </div>
-
-<div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="https://i0.wp.com/snowmads.blog/wp-content/uploads/2013/03/abstract-300x100.jpg?fit=300%2C100&ssl=1" alt="SUB2" style="width:100%">
-        <div class="w3-container">
-          <h3>SUCRIPCION 2</h3>
-          <p class="w3-opacity">¢5000.00</p>
-          <p>Descripción de la suscripción 2</p>
-          <p><button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-name="suscripcion2" data-item-id="sub2" data-item-url="/" data-item-price="5000.00" data-item-payment-interval="Month" data-item-payment-interval-count="2" data-item-payment-trial="2">COMPRAR</button></p>
-        </div>
-      </div>
-    </div>
-
-<div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afb1c3a-ad62-48da-85cd-9c5612c1b563/d80is74-7b59835d-8f3d-455a-a5dd-98be184c12ac.jpg/v1/fill/w_300,h_100,q_70,strp/abstract_drawing_by_xxxyashashivaxxx_d80is74-200h.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQyIiwicGF0aCI6IlwvZlwvNGFmYjFjM2EtYWQ2Mi00OGRhLTg1Y2QtOWM1NjEyYzFiNTYzXC9kODBpczc0LTdiNTk4MzVkLThmM2QtNDU1YS1hNWRkLTk4YmUxODRjMTJhYy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zY1tf7wQIOJY2_Rujl_B-L1aGdLStdJLgxT5BH6orAs" alt="SUB3" style="width:100%">
-        <div class="w3-container">
-          <h3>SUSCRIPCION 3 3</h3>
-          <p class="w3-opacity">¢8000.00</p>
-          <p>Descripción de la suscripción 3</p>
-          <p><button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-name="suscripcion3" data-item-id="sub3" data-item-url="/" data-item-price="8000.00" data-item-payment-interval="Month" data-item-payment-interval-count="3" data-item-payment-trial="3">COMPRAR</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="sobre">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">SOBRE</h3>
-    <p>Esta es una tienda de ejemplo sobre como poder desarrollar un sitio web para comercio Online
-    </p>
-  </div>
-
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contacto">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">CONTACTO</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="nombre" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="correo" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="asunto" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="comentario" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
-      </button>
-    </form>
-  </div>
- <script
-  type="text/javascript"
-  id="snipcart"
-  src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
-  data-api-key="YjE4M2MzNWYtYzllZi00ZGM2LWJmYWQtYmM0MTE3YjUwZjBiNjM2OTAzNjA1NzIxODEyMDQy"
-  data-autopop="false">
-  </script>
-<!-- modal -->
-<!-- End page content -->
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Hecho por Will con W3.css y Snipcart</p>
-</footer>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-</script>
-
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
 
 </body>
+
 </html>

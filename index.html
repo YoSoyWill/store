@@ -16,12 +16,9 @@
 <meta property="og:description" content="Ejemplo de tienda para comercio en linea" />
 <meta property="og:site_name" content="Will Store"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="YjE4M2MzNWYtYzllZi00ZGM2LWJmYWQtYmM0MTE3YjUwZjBiNjM2OTAzNjA1NzIxODEyMDQy"></script>
-
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="YjE4M2MzNWYtYzllZi00ZGM2LWJmYWQtYmM0MTE3YjUwZjBiNjM2OTAzNjA1NzIxODEyMDQy" data-autopop="false"></script>
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 <style>
     html,
@@ -29,13 +26,7 @@
     h1,
     h2,
     h3,
-    h4 {
-        font-family: "Lato", sans-serif
-    }
-    
-    .mySlides {
-        display: none
-    }
+    h4     
     
     .w3-tag,
     .fa {
@@ -66,23 +57,25 @@
     <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
         <span class="w3-left w3-padding"><span class="w3-padding w3-black w3-opacity-min"><b>WILL</b></span> store</span>
         <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+        <a href="#" onclick="w3_close()" class="w3-right w3-button w3-white snipcart-checkout snipcart-summary"><span class="w3-medium snipcart-total-items"></span>  <i class="fa fa-shopping-cart"></i></a>
+     
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-    <!-- !PAGE CONTENT! -->
+    <!-- CONTENIDO -->
     <div class="w3-main" style="margin-left:300px">
 
-        <!-- Push down content on small screens -->
+        <!-- PANTALLAS PEQUEÑAS -->
         <div class="w3-hide-large" style="margin-top:83px"></div>
 
-        <!-- PRODUCTOS Section -->
+        <!-- PRODUCTOS-->
         <div class="w3-row-padding" id="productos">
 
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">PRODUCTOS</h3>
 
-            <div class="w3-third w3-margin-bottom">
+            <div class="w3-quarter w3-margin-bottom">
                 <div class="w3-card-4">
                     <img src="https://imagesofrmnp.com/images/300/Still-Waters-Pano.jpg" alt="producto1" style="width:100%">
                     <div class="w3-container">
@@ -96,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="w3-third w3-margin-bottom">
+            <div class="w3-quarter w3-margin-bottom">
                 <div class="w3-card-4">
                     <img src="https://images.squarespace-cdn.com/content/v1/53015420e4b0c37a4001756a/1487518529392-LR1Y70AXBZSP4Z8O9GJJ/ke17ZwdGBToddI8pDm48kJ9I60vrFbbf4QxGSz3RN_4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcdoekfuy91T7gkrLNkQzlqJayTNwFcKVEg14ZIYkdDg1k63rrAVeGZt7FoqKEtb-V/NavyPier_Panorama1web.jpg?format=300w" alt="producto2" style="width:100%">
                     <div class="w3-container">
@@ -104,13 +97,13 @@
                         <p class="w3-opacity">¢2000.00</p>
                         <p>Descripción del producto 2</p>
                         <p>
-                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="2" data-item-name="PRODUCTO 2" data-item-price="200.00" data-item-description="producto 2" data-item-url="https://willstore.ga" data-item-file-guid="95892041-10f5-4616-ac7c-d36dc32dacd9">COMPRAR</button>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="2" data-item-name="PRODUCTO 2" data-item-price="2000.00" data-item-description="producto 2" data-item-url="https://willstore.ga" data-item-file-guid="95892041-10f5-4616-ac7c-d36dc32dacd9">COMPRAR</button>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="w3-third w3-margin-bottom">
+            <div class="w3-quarter w3-margin-bottom">
                 <div class="w3-card-4">
                     <img src="https://www.beecreekphoto.com/images/300/Austin-Skyline-From-Above-Pano-DR208392.jpg" alt="producto3" style="width:100%">
                     <div class="w3-container">
@@ -118,12 +111,12 @@
                         <p class="w3-opacity">¢3000.00</p>
                         <p>Descripción del producto 3</p>
                         <p>
-                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="3" data-item-name="PRODUCTO 3" data-item-price="3000.00" data-item-description="producto 1" data-item-url="https://willstore.ga">COMPRAR</button>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="3" data-item-name="PRODUCTO 3" data-item-price="3000.00" data-item-description="producto 3" data-item-url="https://willstore.ga">COMPRAR</button>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="w3-third w3-margin-bottom">
+            <div class="w3-quarter w3-margin-bottom">
                 <div class="w3-card-4">
                     <img src="https://www.pictorem.com/collection/300_Art-Design-Works_Abstract%20Sunset%20V%20-%20Panoramic.jpg" alt="producto4" style="width:100%">
                     <div class="w3-container">
@@ -131,12 +124,12 @@
                         <p class="w3-opacity">¢4000.00</p>
                         <p>Descripción del producto 4</p>
                         <p>
-                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="4" data-item-name="PRODUCTO 3" data-item-price="4000.00" data-item-description="producto 3" data-item-url="https://willstore.ga">COMPRAR</button>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="4" data-item-name="PRODUCTO 4" data-item-price="4000.00" data-item-description="producto 4" data-item-url="https://willstore.ga">COMPRAR</button>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="w3-third w3-margin-bottom">
+            <div class="w3-quarter w3-margin-bottom">
                 <div class="w3-card-4">
                     <img src="https://i0.wp.com/snowmads.blog/wp-content/uploads/2013/03/abstract-300x100.jpg?fit=300%2C100&ssl=1" alt="producto5" style="width:100%">
                     <div class="w3-container">
@@ -149,12 +142,12 @@
                     </div>
                 </div>
             </div>
-            <div class="w3-third w3-margin-bottom">
+            <div class="w3-quarter w3-margin-bottom">
                 <div class="w3-card-4">
                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afb1c3a-ad62-48da-85cd-9c5612c1b563/d80is74-7b59835d-8f3d-455a-a5dd-98be184c12ac.jpg/v1/fill/w_300,h_100,q_70,strp/abstract_drawing_by_xxxyashashivaxxx_d80is74-200h.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQyIiwicGF0aCI6IlwvZlwvNGFmYjFjM2EtYWQ2Mi00OGRhLTg1Y2QtOWM1NjEyYzFiNTYzXC9kODBpczc0LTdiNTk4MzVkLThmM2QtNDU1YS1hNWRkLTk4YmUxODRjMTJhYy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zY1tf7wQIOJY2_Rujl_B-L1aGdLStdJLgxT5BH6orAs" alt="producto6" style="width:100%">
                     <div class="w3-container">
                         <h3>PRODUCTO 6</h3>
-                        <p class="w3-opacity">¢5000.00</p>
+                        <p class="w3-opacity">¢6000.00</p>
                         <p>Descripción del producto 6</p>
                         <p>
                             <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="6" data-item-name="PRODUCTO 6" data-item-price="6000.00" data-item-description="producto 6" data-item-url="https://willstore.ga">COMPRAR</button>
@@ -162,7 +155,33 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZ9lrI2UQu6E6klKVk1GBmGscyIgDXZXP6b_VkNy8wgS62s7mBg" alt="producto7" style="width:100%">
+                    <div class="w3-container">
+                        <h3>PRODUCTO 7</h3>
+                        <p class="w3-opacity">¢7000.00</p>
+                        <p>Descripción del producto 7</p>
+                        <p>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="7" data-item-name="PRODUCTO 7" data-item-price="7000.00" data-item-description="producto 7" data-item-url="https://willstore.ga">COMPRAR</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://justicefamilylawyers.com.au/wp-content/uploads/2019/07/abstract-background-dew-2259232-300x100.jpg" alt="producto8" style="width:100%">
+                    <div class="w3-container">
+                        <h3>PRODUCTO 8</h3>
+                        <p class="w3-opacity">¢8000.00</p>
+                        <p>Descripción del producto 8</p>
+                        <p>
+                            <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="8" data-item-name="PRODUCTO 8" data-item-price="8000.00" data-item-description="producto 8" data-item-url="https://willstore.ga">COMPRAR</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
 
         <!-- About Section -->
         <div class="w3-container w3-padding-32" id="sobre">
@@ -171,14 +190,13 @@
             </p>
         </div>
 
-        <script type="text/javascript" id="snipcart" src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="YjE4M2MzNWYtYzllZi00ZGM2LWJmYWQtYmM0MTE3YjUwZjBiNjM2OTAzNjA1NzIxODEyMDQy" data-autopop="false">
-        </script>
+
         <!-- modal -->
         <!-- End page content -->
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-16">
+    <footer class="w3-center w3-gray w3-padding-16">
         <p>Hecho por Will con W3.css y Snipcart</p>
     </footer>
 

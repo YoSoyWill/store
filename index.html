@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+   <title>¿Cómo lo Hago?</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.20/default/snipcart.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+   <style>
+      body {font-family: "Lato", sans-serif}
+      .mySlides {display: none}
+   </style>
+   <body>
+      <!-- Navbar -->
+      <div class="w3-top">
+         <div class="w3-bar w3-cyan     w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large e w3-right snipcart-checkout snipcart-summary"><span class="w3-medium snipcart-total-items"></span>  <i class="fa fa-shopping-cart"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">INICIO</a>
+            <a href="#how" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CÓMO FUNCIONA</a>
+            <a href="#servicios" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICIOS DISPONIBLES</a>
+            <a href="#contacto" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
+         </div>
+      </div>
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+      <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+         <a href="#how" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CÓMO FUNCIONA</a>
+         <a href="#servicios" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SERVICIOS DISPONIBLES</a>
+         <a href="#contacto" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTO</a>
+      </div>
+      <!-- Page content -->
+      <div class="w3-content" style="max-width:2000px;margin-top:46px">
+      <!-- Automatic Slideshow Images -->
+      <div><img src="ban.jpg" alt="Lights" class="w3-image" width="100%" >  </div>
+      <!-- The how to Section -->
+      <div class="w3-cyan" id="how">
+         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide"><strong>CÓMO FUNCIONA</strong></h2>
+            <p><strong>¿Cómo lo hago?</strong> es una plataforma de "alquiler" de servicios profesionales por hora, con el único fin de obtener asesoramiento de cómo resolver cualquier inquietud.</p>
+            <p>Nuestros colaboradores no están obligados a llevar a cabo ninguna tarea, solamente a acompañarlo y asesorarlo para que usted pueda hacerlo por sí mismo.</p>
+            <p>El tiempo de atención es variable en relación con el servicio escogido, de manera que sea congruente con lo establecido por los respectivos Colegios Profesionales</p>
+            <p>Una vez realizada la compra, llegará a su correo electrónico un comprobante y un documentos con las instrucciones</p>
+            <p>Para las video llamadas se utilizará exclusivamente la plataforma Zoom y en caso de los videos, los mismos estarán subidos de manera privada a canales de YouTube y se le enviará un link para accesarlo</p>
+            <p>El tiempo de atención de 12 Horas máximo aplica en horario de lunes a viernes, los fines de semana este horario puede extenderse hasta un máximo de 24 horas</p>
+            <div class="w3-quarter w3-section">
+               <span class="w3-xlarge">¢5 000.00</span><br>
+               Tarifa única
+            </div>
+            <div class="w3-quarter w3-section">
+               <span class="w3-xlarge">12 Horas</span><br>
+               Tiempo máximo de atención*
+            </div>
+            <div class="w3-quarter w3-section">
+               <span class="w3-xlarge">30 minutos</span><br>
+               Duración máxima de atención   
+            </div>
+            <div class="w3-quarter w3-section">
+               <span class="w3-xlarge">Atención</span><br>
+               Sincrónica por video llamada o asincrónica por video   
+            </div>
+         </div>
+      </div>
+      <!-- The Tour Section -->
+      <div class="w3-white" id="servicios">
+         <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center"><strong>SERVICIOS DISPONIBLES</strong></h2>
+            <p class="w3-opacity w3-center"><i>Agregamos nuevos servicios constantemente</i></p>
+            <br>
+            <input class="w3-input w3-animate-input" style="width:100%" id="busqueda" type="text" placeholder="Buscar..">
+            <table class="w3-table w3-bordered w3-padding-16">
+               <thead class="w3-blue">
+                  <tr>
+                     <th>SECTOR</th>
+                     <th>TEMÁTICA</th>
+                     <th>ADQUIRIR</th>
+                  </tr>
+               </thead>
+               <tbody id="tablafaq">
+                  <tr>
+                     <td>Educación</td>
+                     <td><strong>Español </strong>
+                        <br/> Busca resolver dudas sobre la asignatura de español en primaria y secundaria
+                     </td>
+                     <td> <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="ed-español" data-item-name="Español" data-item-price="5000.00" data-item-description="Busca resolver dudas sobre la asignatura de español en primaria y secundaria" data-item-url="http://comolohago.tk" data-item-file-guid="e791e3e5-c87a-44ae-ba4d-6bda24e645b9">COMPRAR</button></td>
+                  </tr>
+                  <tr>
+                     <td>Educación</td>
+                     <td><strong>Matemáticas</strong>
+                        <br/> Busca resolver dudas sobre la asignatura de matemáticas en primaria y secundaria
+                     </td>
+                     <td> <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="ed-mate" data-item-name="Matemáticas" data-item-price="5000.00" data-item-description="Busca resolver dudas sobre la asignatura de Matemáticas en primaria y secundaria" data-item-url="http://comolohago.tk" data-item-file-guid="e791e3e5-c87a-44ae-ba4d-6bda24e645b9">COMPRAR</button></td>
+                  </tr>
+                  <tr>
+                     <td>Educación</td>
+                     <td><strong>Ciencias</strong>
+                        <br/> Busca resolver dudas sobre la asignatura de ciencias, física, quimica o biología en primaria y secundaria
+                     </td>
+                     <td> <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="ed-ciencias" data-item-name="Ciencias" data-item-price="5000.00" data-item-description="Busca resolver dudas sobre la asignatura de Ciencias en primaria y secundaria" data-item-url="http://comolohago.tk" data-item-file-guid="e791e3e5-c87a-44ae-ba4d-6bda24e645b9">COMPRAR</button></td>
+                     >
+                  </tr>
+                  <tr>
+                     <td>Educación</td>
+                     <td><strong>Estudios sociales</strong>
+                        <br/> Busca resolver dudas sobre la asignatura de Estudios sociales y cívica en primaria y secundaria
+                     </td>
+                     <td> <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="ed-sociales" data-item-name="Estudios Sociales y Cívica" data-item-price="5000.00" data-item-description="Busca resolver dudas sobre la asignatura de Estudios sociales y cívica en primaria y secundaria" data-item-url="http://comolohago.tk" data-item-file-guid="e791e3e5-c87a-44ae-ba4d-6bda24e645b9">COMPRAR</button></td>
+                  </tr>
+                  <tr>
+                     <td>Educación</td>
+                     <td><strong>Inglés</strong>
+                        <br/> Busca resolver dudas sobre la asignatura de Inglés en primaria y secundaria
+                     </td>
+                     <td> <button class="w3-button w3-light-grey w3-block snipcart-add-item" data-item-id="ed-ingles" data-item-name="Inglés" data-item-price="5000.00" data-item-description="Busca resolver dudas sobre la asignatura de inglés en primaria y secundaria" data-item-url="http://comolohago.tk" data-item-file-guid="e791e3e5-c87a-44ae-ba4d-6bda24e645b9">COMPRAR</button></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <!-- The Contact Section -->
+      <div class="w3-cyan" id="servicios">
+         <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+            <h2 class="w3-wide w3-center"><strong>CONTACTO</strong></h2>
+            <p class="w3-opacity w3-center"><i>¿Tienes dudas, sugerencias o quieres ser parte de nuestra fuerza?</i> No dudes en contactarnos</p>
+            <div class="w3-row w3-padding-32">
+               <div class="w3-col m6 w3-large w3-margin-bottom">
+                  <i class="fa fa-map-marker w3-color-red" style="width:30px"></i> San José, Costa Rica<br>
+                  <i class="fa fa-phone" style="width:30px"></i> Teléfono: 8888-8888<br>
+                  <i class="fa fa-envelope" style="width:30px"> </i> Email: infor@comolohago.com<br>
+               </div>
+            </div>
+         </div>
+         <!-- End Page Content -->
+      </div>
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+         <i class="fa fa-facebook-official w3-hover-opacity"></i>
+         <i class="fa fa-instagram w3-hover-opacity"></i>
+         <i class="fa fa-snapchat w3-hover-opacity"></i>
+         <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+         <i class="fa fa-twitter w3-hover-opacity"></i>
+         <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </footer>
+      <script>
+         // Used to toggle the menu on small screens when clicking on the menu button
+         function myFunction() {
+           var x = document.getElementById("navDemo");
+           if (x.className.indexOf("w3-show") == -1) {
+             x.className += " w3-show";
+           } else { 
+             x.className = x.className.replace(" w3-show", "");
+           }
+         }
+         
+      </script>
+      <script>
+         $(document).ready(function() {
+             $("#busqueda").on("keyup", function() {
+                 var value = $(this).val().toLowerCase();
+                 $("#tablafaq tr").filter(function() {
+                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                 });
+             });
+         });
+      </script>
+      <div hidden id="snipcart" data-api-key="YjE4M2MzNWYtYzllZi00ZGM2LWJmYWQtYmM0MTE3YjUwZjBiNjM2OTAzNjA1NzIxODEyMDQy"></div>
+      <script src="https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.js"></script
+   </body>
+</html>

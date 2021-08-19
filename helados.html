@@ -1,1 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  margin-bottom: 12px;
+  align: center;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-cyan w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Cerrar</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Helados<br>UTC</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inicio</a> 
+    <a href="#helados" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Helados</a> 
+    <a href="#nosotros" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Nosotros</a> 
+    <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-cyan w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-cyan w3-margin-right" onclick="w3_open()">☰</a>
+  <span></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>HELADOS</b></h1>
+    <h1 class="w3-xxxlarge w3-text-cyan"><b>UTC</b></h1>
+    <hr style="width:50px;border:5px solid cyan" class="w3-round">
+  </div>
+  
+<h2 class="w3-orange w3-center" id="helados">HELADOS</h2>
+
+<div id="myBtnContainer w3-center">
+  <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+  <button class="btn" onclick="filterSelection('individual')"> Individual</button>
+  <button class="btn" onclick="filterSelection('taza')"> Taza</button>
+  <button class="btn" onclick="filterSelection('pinta')"> Pinta</button>
+  <button class="btn" onclick="filterSelection('cuarto')"> Cuarto</button>
+  <button class="btn" onclick="filterSelection('galon')"> Galón</button>
+</div>
+
+<div class="w3-container">
+  <div class="w3-row-padding" >
+  <div class="w3-third w3-margin-bottom filterDiv individual">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA</h3>
+                        <p>Individual</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢400.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv individual">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CHOCOLATE</h3>
+                        <p>Individual</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢400.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv individual">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">FRESA</h3>
+                        <p>Individual</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢400.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv individual">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">LIMÓN</h3>
+                        <p>Individual</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢400.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv individual">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CAFE</h3>
+                        <p>Individual</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢400.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv individual">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">MENTA</h3>
+                        <p>Individual</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢400.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv individual">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA-OREO</h3>
+                        <p>Individual</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢400.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv taza">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA</h3>
+                        <p>Taza</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢700.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv taza">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CHOCOLATE</h3>
+                        <p>Taza</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢700.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv taza">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">FRESA</h3>
+                        <p>Taza</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢700.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv taza">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">LIMÓN</h3>
+                        <p>Taza</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢700.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv taza">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CAFE</h3>
+                        <p>Taza</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢700.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv taza">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">MENTA</h3>
+                        <p>Taza</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢700.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv taza">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA-OREO</h3>
+                        <p>Taza</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢700.00</button></p>
+                    </div>
+                </div>
+            </div>
+ <div class="w3-third w3-margin-bottom filterDiv pinta">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA</h3>
+                        <p>Pinta</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢950.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv pinta">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CHOCOLATE</h3>
+                        <p>Pinta</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢950.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv pinta">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">FRESA</h3>
+                        <p>Pinta</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢950.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv pinta">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">LIMÓN</h3>
+                        <p>Pinta</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢950.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv pinta">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CAFE</h3>
+                        <p>Pinta</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢950.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv pinta">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">MENTA</h3>
+                        <p>Pinta</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢950.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv pinta">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA-OREO</h3>
+                        <p>Pinta</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢950.00</button></p>
+                    </div>
+                </div>
+            </div>
+ <div class="w3-third w3-margin-bottom filterDiv cuarto">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA</h3>
+                        <p>Cuarto</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,200.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv cuarto">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CHOCOLATE</h3>
+                        <p>Cuarto</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,200.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv cuarto">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">FRESA</h3>
+                        <p>Cuarto</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,200.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv cuarto">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">LIMÓN</h3>
+                        <p>Cuarto</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,200.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv cuarto">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CAFE</h3>
+                        <p>Cuarto</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,200.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv cuarto">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">MENTA</h3>
+                        <p>Cuarto</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,200.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv cuarto">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA-OREO</h3>
+                        <p>Cuarto</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,200.00</button></p>
+                    </div>
+                </div>
+            </div>
+ <div class="w3-third w3-margin-bottom filterDiv galon">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA</h3>
+                        <p>Galon</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,900.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv galon">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CHOCOLATE</h3>
+                        <p>Galon</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,900.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv galon">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">FRESA</h3>
+                        <p>Galon</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,900.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv galon">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">LIMÓN</h3>
+                        <p>Galon</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,900.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv galon">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">CAFE</h3>
+                        <p>Galon</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,900.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv galon">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">MENTA</h3>
+                        <p>Galon</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,900.00</button></p>
+                    </div>
+                </div>
+            </div>
+  <div class="w3-third w3-margin-bottom filterDiv galon">
+                <div class="w3-card-4">
+                    <img src="helado.jpg"  style="width:100%">
+                    <div class="w3-container">
+                        <h3 class="w3-text-orange">VAINILLA-OREO</h3>
+                        <p>Galon</p>
+                        <p><button class="w3-button w3-cyan w3-block"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ¢1,900.00</button></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+</div>
+
+<h2 class="w3-orange w3-center" id="nosotros">NOSOTROS</h2>
+<h2 class="w3-orange w3-center" id="contacto">CONTACTO</h2>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-xlarge w3-text-cyan"></i>Alajuelita centro</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-xlarge w3-text-cyan"></i><a href="" style="text-decoration: none">heladosutc@gmail.com</a></p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-xlarge w3-text-cyan"></i><a href="" style="text-decoration: none">2222-2558</a></p>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powecyan by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+</body>
+</html>
 
